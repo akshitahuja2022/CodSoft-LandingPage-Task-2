@@ -1,0 +1,302 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+  overscroll-behavior: smooth;
+  background-color: aliceblue;
+}
+/* Header Section */
+header {
+  margin-left: 1rem;
+}
+header .header-container {
+  /* border: 1px solid #00008b; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.Travel-logo {
+  display: flex;
+  align-items: center;
+  margin-left: 2rem;
+  font-size: 1.5rem;
+}
+.Travel-logo h2 {
+  font-size: 2rem;
+  margin-left: 7px;
+}
+.Travel-logo span {
+  color: olive;
+}
+.navbar .navbar-list {
+  display: flex;
+  list-style: none;
+  margin-left: 20rem;
+}
+.navbar-list .navbar-list-item a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  margin-left: 4rem;
+  color: azure;
+}
+.navbar-list .navbar-list-item:hover {
+  transform: scale(1.1);
+  transition: ease 0.4s;
+  text-decoration: underline;
+  text-decoration-color: azure;
+}
+.header-container .button {
+  position: relative;
+  right: 3%;
+}
+.button .btn {
+  background-color: rgb(151, 151, 3);
+  color: azure;
+  width: 130px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+}
+.button .btn:hover {
+  transform: scale(1.1);
+  transition: ease 0.4s;
+}
+/* Home Section */
+.home {
+  width: 100%;
+  height: 100vh;
+}
+.home::before {
+  content: "";
+  height: 880px;
+  background-image: url("image/Landing-Page-images/Travel-background.jpg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  z-index: -1;
+  opacity: 0.7;
+}
+.home .home-content {
+  margin-left: 6rem;
+  margin-top: 10rem;
+}
+.home .home-content h2 {
+  color: black;
+  font-size: 4rem;
+  line-height: 1.1;
+  margin-bottom: 0.6rem;
+}
+.home .home-content span {
+  display: block;
+}
+.home .home-content p {
+  color: black;
+  width: 600px;
+  line-height: 1.3;
+  font-size: 1.3rem;
+  margin-bottom: 3rem;
+}
+.home .btn-info {
+  margin-left: 1rem;
+  background: transparent;
+  border: 2px solid white;
+}
+/* About Section */
+.about {
+  width: 100%;
+  height: 70vh;
+}
+.about .about-container {
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  background-color: aliceblue;
+}
+.about-container .about-img img {
+  margin: 1rem;
+  margin-left: 3rem;
+  border-radius: 15px;
+}
+.about-container .about-content {
+  margin-right: 5rem;
+}
+.about-container .about-content h3 {
+  font-size: 2.5rem;
+  margin-top: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+.about-container .about-content p {
+  font-size: 1.5rem;
+  width: 550px;
+  margin-bottom: 1.5rem;
+  line-height: 1.4;
+}
+/* Tour Section */
+.tour {
+  width: 100%;
+  height: 95vh;
+}
+.tour-container .tour-content {
+  text-align: center;
+}
+.tour-container .tour-content h3 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+.tour-container .tour-content p {
+  font-size: 1.4rem;
+  margin-bottom: 4rem;
+}
+.tour-container .tour-content span {
+  display: block;
+}
+.tour .tour-card-container {
+  display: flex;
+}
+.tour .tour-card {
+  margin-left: 2.5rem;
+}
+.tour .tour-card img {
+  border-radius: 20px;
+}
+.tour .tour-box {
+  width: 270px;
+  height: 200px;
+  text-align: center;
+  position: relative;
+  bottom: 40%;
+  left: 20%;
+  border-radius: 10px;
+  color: azure;
+  background-color: black;
+  opacity: 0.6;
+  flex-wrap: wrap;
+  z-index: 1;
+}
+.tour .tour-box:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+  transition: 0.3s ease;
+}
+.tour .tour-box h4 {
+  z-index: 6;
+  font-size: 1.7rem;
+  padding-top: 2rem;
+  line-height: 1.3;
+}
+.tour .tour-box p {
+  font-size: 1.1rem;
+  z-index: 2;
+  line-height: 1.3;
+}
+.tour .tour-box .btn {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: underline;
+  background: none;
+}
+/* Packages Section */
+.package {
+  width: 100%;
+  height: 75vh;
+}
+
+.package .package-container {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  background-color: aliceblue;
+}
+.package .package-content h4 {
+  font-size: 2.8rem;
+  margin: 1.5rem;
+  margin-left: 3.5rem;
+  margin-bottom: 1.3rem;
+}
+.package .package-content p {
+  width: 650px;
+  font-size: 1.5rem;
+  line-height: 1.3;
+  margin-left: 4rem;
+  margin-bottom: 1.4rem;
+}
+.package .package-img img {
+  margin: 1.5rem;
+  margin-right: 2rem;
+  border-radius: 15px;
+}
+.package .package-content del {
+  font-size: 1.5rem;
+  color: olive;
+}
+.package .package-content button {
+  margin-left: 4rem;
+}
+
+/*Footer section*/
+footer {
+  position: relative;
+  top: -1%;
+}
+.footer {
+  background-color: rgb(134, 214, 217);
+  color: #000000;
+}
+
+.footer .container {
+  padding-block: 60px;
+  display: flex;
+  gap: 18px;
+  margin-left: 5rem;
+}
+.footer .footer-brand .Travel-logo {
+  margin-left: 1rem;
+}
+.footer-text {
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  margin-block: 12px;
+  width: 350px;
+}
+.footer .footer-list-title {
+  font-size: 1.5rem;
+  margin-left: 5rem;
+  color: #000000;
+  margin-block-end: 16px;
+}
+.footer-list {
+  display: grid;
+  margin-left: 5rem;
+  gap: 15px;
+  list-style: none;
+}
+.footer-link {
+  color: #000000;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+.social-list {
+  display: flex;
+  gap: 50px;
+  font-size: 2rem;
+  list-style: none;
+}
+.footer-bottom {
+  border-block-start: 1px solid #101111;
+  line-height: 1;
+}
+.footer-bottom .container {
+  font-size: 1.7rem;
+  padding-block: 10px;
+  padding-left: 30rem;
+}
